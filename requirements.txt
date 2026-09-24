@@ -1,0 +1,9 @@
+# Global Dossier 国外局实审分析助手 - 依赖
+curl_cffi>=0.5.10          # Chrome TLS 指纹 HTTP 客户端（访问 Global Dossier CDN 必需）
+PyMuPDF>=1.23              # PDF 文本层提取
+requests>=2.28
+openai>=1.30               # 大模型（OpenAI 兼容协议）
+
+# OCR 后端（二选一或都装）：
+rapidocr-onnxruntime>=1.3   # 本地 CPU OCR（默认，零配置，速度较慢）
+mineru-open-sdk>=0.1.0      # MinerU 云端 OCR（高精度，需 MINERU_API_KEY）
