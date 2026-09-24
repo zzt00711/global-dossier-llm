@@ -1,0 +1,22 @@
+# 密钥与本地配置——绝不提交
+.env
+peizhi.txt
+*.key
+*.pem
+
+# 运行时产物
+logs/
+reports/
+.cache/
+__pycache__/
+*.pyc
+
+# 临时调试脚本与资料
+_tmp_*
+_api_list.*
+_handbook*
+_openapi.json
+
+# Python 虚拟环境
+venv/
+.venv/
